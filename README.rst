@@ -18,7 +18,8 @@ Potential uses
 Quick start
 -----------
 
-1. Building/Installing":
+1. Building & Installing::
+
     cd django-keyval_settings/
     python[3] setup.py sdist
     cd ..
@@ -33,7 +34,8 @@ Quick start
     )
 
 3. Include the keyval_settings URLconf in your project urls.py like this:: 
-    :code:`url(r'^settings/', include('keyval_settings.urls')),`
+
+    url(r'^settings/', include('keyval_settings.urls')),
 
 4. Run :code:`python manage.py migrate` to create the keyval_settings models.
 
