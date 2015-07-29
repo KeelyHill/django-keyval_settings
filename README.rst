@@ -7,7 +7,7 @@ Essentially, it is a 'dictionary for your project'.
 
 Important Notes:
 ----------------
-- `False`, `True`, `None` will get converted into their json counter-parts when calling the view, but normal when calling functions in code.
+- :code:`False`, :code:`True`, :code:`None` will get converted into their json counter-parts when calling the view, but normal when calling functions in code.
 - There is currently no support for 'true' arrays and dictionaries, however, a json dictionary will properly format.
 - At the moment, there is nothing preventing duplicates.
 
@@ -27,7 +27,7 @@ Quick start
     )
 
 2. Include the keyval-settings URLconf in your project urls.py like this:: 
-    url(r'^settings/', include('keyval-settings.urls')),
+    :code:`url(r'^settings/', include('keyval-settings.urls')),`
 
 3. Run `python manage.py migrate` to create the keyval-settings models.
 
