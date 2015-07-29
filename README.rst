@@ -29,7 +29,7 @@ Quick start
 2. Include the keyval-settings URLconf in your project urls.py like this:: 
     :code:`url(r'^settings/', include('keyval-settings.urls')),`
 
-3. Run `python manage.py migrate` to create the keyval-settings models.
+3. Run :code:`python manage.py migrate` to create the keyval-settings models.
 
 4. Start the development server and visit http://127.0.0.1:8000/admin/ to start creating settings.
 
