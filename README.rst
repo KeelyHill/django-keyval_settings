@@ -44,9 +44,9 @@ Settings *are* just normal models. This app includes some helper functions.
 
     from keyval_settings.models import Setting
 
-    Setting.create('ios_update_available', True)
+    Setting.create('ios_update_available', True).save()
     Setting.get('ios_update_available')  # True
 
-    Setting.create('andriod_update_available', 'false')
+    Setting.create('andriod_update_available', 'false').save()
     Setting.get('andriod_update_available')  # False
 
