@@ -18,22 +18,28 @@ Potential uses
 Quick start
 -----------
 
-1. Add "keyval-settings" to your INSTALLED_APPS setting like this::
+1. Building/Installing":
+    cd django-keyval_settings/
+    python[3] setup.py sdist
+    cd ..
+    pip install django-keyval_settings
+
+2. Add "keyval_settings" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = (
         ...
-        'keyval-settings',
+        'keyval_settings',
         ...
     )
 
-2. Include the keyval-settings URLconf in your project urls.py like this:: 
-    :code:`url(r'^settings/', include('keyval-settings.urls')),`
+3. Include the keyval_settings URLconf in your project urls.py like this:: 
+    :code:`url(r'^settings/', include('keyval_settings.urls')),`
 
-3. Run :code:`python manage.py migrate` to create the keyval-settings models.
+4. Run :code:`python manage.py migrate` to create the keyval_settings models.
 
-4. Start the development server and visit http://127.0.0.1:8000/admin/ to start creating settings.
+5. Start the development server and visit http://127.0.0.1:8000/admin/ to start creating settings.
 
-5. Visit http://127.0.0.1:8000/settings/ to see a dictionary of the settings.
+6. Visit http://127.0.0.1:8000/settings/ to see a dictionary of the settings.
 
 
 In Code Usage
