@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import JsonResponse
 from .models import Setting
 import json
 
@@ -13,4 +13,4 @@ def settings_dict_view(request, key=None):
         for setting in Setting.objects.all():
             resp[setting.key] = setting.value
 
-    return HttpResponse(json.dumps(resp))
+    return JsonResponse(resp)
